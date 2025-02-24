@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("back.jpg.jpg");
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .nav-links a:hover {
+    color: #6a11cb;
+  }
+  main {
+    padding: 2rem;
+  }
+  .bucket-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .bucket-list li {
+    background: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .bucket-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bucket-list li i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .bucket-list li.completed {
+    color: #888;
+   
+  }
+  
+  .bucket-list li.completed i {
+    color: #1bb920;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background: linear-gradient(135deg,#4545457b, #575757);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .bucket-list li {
+      padding: 0.8rem;
+    }
+  
+    .bucket-list li i {
+      font-size: 1rem;
+    }}
+
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+  }
+  
+  .event-date p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .event-title h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+  }
+  
+  .event-title p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .event-description h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+  }
+  
+  .event-description p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .event-time p {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+  }
+  
+  .event-theme p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .next-button button {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .next-button button:hover {
+    background: #6a11cb;
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .hero {
+      padding: 3rem 1rem;
+    }
+  
+    .event-title h1 {
+      font-size: 3rem;
+    }
+  
+    .event-description h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .nav-links a {
+      font-size: 0.8rem;
+    }
+  
+    .event-title h1 {
+      font-size: 2rem;
+    }
+  
+    .event-description h2 {
+      font-size: 1.2rem;
+    }
+  
+    .event-description p {
+      font-size: 0.9rem;
+    }
+  }
